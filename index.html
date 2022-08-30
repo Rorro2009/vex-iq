@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vex Robotics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar-inverse my_nav_bar" style="position:sticky;top:0;z-index:99999">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Vex Robotics</a>
+        </div>
+        
+        <div class="collapse navbar-collapse my_nav_bar" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#welcome">Competencias</a></li>
+            <li><a href="#logros">Logros</a></li>
+            <li><a href="#novedades">Novedades</a></li>
+            <li><a href="#contacto">Contacto</a></li>  
+          </ul>
+        </div>
+    
+    </nav>
+
+<section id="welcome">
+     <img class="img-responsive img-thumbnail" src="data:image/png;base64,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">
+     <iframe width="1536" height="864" src="https://www.youtube.com/embed/I1xfAxlaTgo" title="The VEX Worlds Experience" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <div class="container">
+	
+        <h2 class="page-header" id="travel">La vida en la competencia</h2>
+      
+        <center>
+            <div class="travel_mainDiv"> 
+                <img width="500" height="300" src="presentacion.jpg">
+  
+                <h4 class="text-capitalize"><kbd>Escenario</kbd></h4>
+                
+                <hr>
+  
+                <h5 class="text-success text-capitalize" >Presentacion</h5>
+  
+                <p class="text-muted" >En esta parte presentaras el pais del que vienes</p>
+            </div>
+        </center>
+  
+  <br><br>
+  
+        <center>
+            <div  class="travel_mainDiv"> 
+                <img width="500" height="300" src="competencia.jpg">
+  
+                <h4 class="text-capitalize"><kbd>Cancha</kbd></h4>
+                
+                <hr >
+  
+                <h5 class="text-success text-capitalize" >competencia </h5>
+  
+                <p class="text-muted " >Demuestra tu nivel compitiendo para obtener la mejor puntuacion</p>
+            </div>
+        </center>
+      </section>
+
+
+
+      <section>
+        <h2 class="page-header" id="logros">Premios</h2>
+
+<div class="bg-primary movie_head" data-toggle="collapse" data-target="#driver" >
+ Primer Lugar Driver<i class="fa fa-sort-desc" ></i>
+  </div>
+
+  <div id="driver" class="collapse">
+
+	  <div class="movie_text">
+        <img src="premio vex d.jpg" class="img-responsive img-thumbnail"> 
+		  <h5 class="text-success text-capitalize">Primer Lugar </h5>
+		  <p>Este premio es otorgado a aquellos que hagan mas puntos manejando su robot</p>
+	  </div>
+  </div>
+
+  <div class="bg-primary movie_head" data-toggle="collapse" data-target="#programador" >
+ Primer Lugar Programador<i class="fa fa-sort-desc" ></i>
+  </div>
+
+  <div id="programador" class="collapse">
+
+	  <div class="movie_text">
+        <img src="premio vex p.jpg" class="img-responsive img-thumbnail"> 
+		  <h5 class="text-success text-capitalize">Primer Lugar </h5>
+		  <p>Este premio es otorgado a aquellos que hagan mas puntos con la programacion que le dieron al robot</p>
+	  </div>
+  </div>
+  </section>
+  <h2 class="page-header" id="novedades">Novedades</h2>
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 enviroment_li">
+      <h4>Nuevo Reto 2021-2022</h4>
+      <img src="reto.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+      <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        VEX IQ Challenge Pitching In se juega en un campo rectangular de 6′ x 8′ configurado como se ve arriba. Dos robots compiten en el Teamwork Challenge como una alianza en partidos de trabajo en equipo de 60 segundos de duración, trabajando en colaboración para ganar puntos.
+      </p>
+    </li>
+
+  </ul>
+  <h2 class="page-header" id="contacto">Contacto</h2>
+  <iframe class="width" src="https://www.google.com/maps/embed?pb=!4v1661832773694!6m8!1m7!1sI6QGOxv2afKouG0Cs1yz6A!2m2!1d23.71816035286284!2d-99.12078674930568!3f325.55!4f1.8799999999999955!5f1.4009476500262918" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+    <hr>
+    <img src="R.png" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+    <h3>Rodrigo Martinez</h3>
+          <div class="contact_1" >
+             <a href="">
+                 <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;mygmailid@gmail.com</h5>
+              </a> 
+  
+             <a href="#"> 
+                 <h5><i class="fa fa-instagram" ></i>&nbsp;&nbsp;Rodrigo Martinez</h5>
+              </a> 
+          </div>
+  
+  </section>
+  
+    </div>
+
+ </body>
+
+</html>
+
